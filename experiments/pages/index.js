@@ -25,6 +25,7 @@ export default function Home() {
           Experiments
         </p>
         <ul style={{marginTop: '-2rem'}}>
+          {/* Box */}
           <li style={{listStyleType: 'none', marginLeft: '-2rem'}}>
             <Link href="/experiment-one/experiment-one">
               <a><code className={styles.code}>experiment-one</code></a>
@@ -35,13 +36,23 @@ export default function Home() {
               </li>
             </ul>
           </li>
+          {/* Sphere */}
+          <li style={{listStyleType: 'none', marginLeft: '-2rem', marginTop: '2rem'}}>
+            <Link href="/experiment-two/experiment-two">
+              <a><code className={styles.code}>experiment-two</code></a>
+            </Link>
+            <ul>
+              <li style={{fontSize: '14px', listStyleType: 'none'}}>
+                Making a sphere
+              </li>
+            </ul>
+          </li>
         </ul>
-        
+
         <div className={styles.grid}>
           <h2>Helpful Next.js Tools Below</h2>
           <p>For anyone to reference when trying or extending any of these experiments.</p>
         </div>
-          
 
         <div className={styles.grid}>
           <a href="https://nextjs.org/docs" className={styles.card}>
