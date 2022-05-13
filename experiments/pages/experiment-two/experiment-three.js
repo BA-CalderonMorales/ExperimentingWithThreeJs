@@ -1,11 +1,13 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import styles from "../../styles/ExperimentTwo.module.css";
-import Floor from "./components/Floor.jsx";
+import styles from "../../styles/ExperimentThree.module.css";
 import Sphere from "./components/Sphere.jsx";
-import LightBulb from "./components/LightBulb.jsx";
-import OrbitControls from "./components/OrbitControls";
-import Draggable from "./components/DragControls";
+
+// Common files
+import Floor from "../common/components/Floor.jsx";
+import LightBulb from "../common/components/LightBulb.jsx";
+import OrbitControls from "../common/components/OrbitControls";
+import Draggable from "../common/components/DragControls";
 
 const ExperimentTwo = () => {
 return (

@@ -21,33 +21,29 @@ export default function Home() {
         </p>
       </h1>
 
-      <p style={{marginTop: '-1rem'}} className={styles.description}>
-        Experiments
-      </p>
-      <ul style={{marginTop: '-2rem'}}>
-        {/* Box */}
-        <li style={{listStyleType: 'none', marginLeft: '-2rem'}}>
-          <Link href="/experiment-one/experiment-one">
-            <a><code className={styles.code}>experiment-one</code></a>
-          </Link>
-          <ul>
-              <li style={{fontSize: '14px', listStyleType: 'none'}}>
-                Making a box
-              </li>
-          </ul>
-        </li>
-        {/* Sphere */}
-        <li style={{listStyleType: 'none', marginLeft: '-2rem', marginTop: '2rem'}}>
-          <Link href="/experiment-two/experiment-two">
-            <a><code className={styles.code}>experiment-two</code></a>
-          </Link>
-          <ul>
-            <li style={{fontSize: '14px', listStyleType: 'none'}}>
-              Making a sphere
-            </li>
-          </ul>
-        </li>
-      </ul>
+      <div className={styles.grid}>
+        <ul>
+          {/* Box */}
+          <li style={{listStyleType: 'none', marginLeft: '-1rem'}}>
+            <Link href="/experiment-one/experiment-one">
+              <a><code title="Making a Box" className={styles.code}>experiment-one</code></a>
+            </Link>
+          </li>
+          {/* Sphere */}
+          <li style={{listStyleType: 'none', marginLeft: '-1rem', marginTop: '2rem'}}>
+            <Link href="/experiment-two/experiment-two">
+              <a><code title="Making a sphere" className={styles.code}>experiment-two</code></a>
+            </Link>
+          </li>
+          {/* Importing a GLTF prop from poly.pizza */}
+          {/* Rocket ship by Poly by Google [CC-BY] (https://creativecommons.org/licenses/by/3.0/) via Poly Pizza (https://poly.pizza/m/c3DPjGP3mNB) */}
+          <li style={{listStyleType: 'none', marginLeft: '-1rem', marginTop: '2rem'}}>
+            <Link href="/experiment-three/experiment-three">
+              <a><code title="Imporing a GLTF 3D prop" className={styles.code}>experiment-three</code></a>
+            </Link>
+          </li>
+        </ul>
+      </div>
 
       <div className={styles.grid}>
         <h2>Helpful Next.js Tools Below</h2>
