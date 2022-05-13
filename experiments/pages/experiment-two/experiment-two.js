@@ -1,6 +1,6 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
-import styles from "../../styles/ExperimentThree.module.css";
+import styles from "../../styles/ExperimentTwo.module.css";
 import Sphere from "./components/Sphere.jsx";
 
 // Common files
@@ -13,11 +13,11 @@ const ExperimentTwo = () => {
 return (
     <div style={{ width: "100vw", height: "100vh" }}>
         <Canvas
-        shadows={true}
-        className={styles.canvas}
-        camera={{
-        position: [-6, 7, 7],
-        }}
+            shadows={true}
+            className={styles.canvas}
+            camera={{
+                position: [-6, 7, 7],
+            }}
         >
             <ambientLight color={"white"} intensity={0.3} />
             <LightBulb position={[0, 3, 0]} />
