@@ -8,9 +8,9 @@ export default function Home() {
     const getLinks = () => {
         let paths = [
             {route: "/experiment-one/experiment-one", title: "Making a Cube"},
-            {route: "/experiment-one/experiment-two", title: "Making a Sphere"},
-            {route: "/experiment-one/experiment-three", title: "Using a 3d Prop (Rocket Ship)"},
-            {route: "/experiment-one/experiment-four", title: "Exploring Box Physics"}
+            {route: "/experiment-two/experiment-two", title: "Making a Sphere"},
+            {route: "/experiment-three/experiment-three", title: "Using a 3d Prop (Rocket Ship)"},
+            {route: "/experiment-four/experiment-four", title: "Exploring Box Physics"}
         ];
         let links = [];
         for (const path of paths) {
