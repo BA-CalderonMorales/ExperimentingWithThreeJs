@@ -7,17 +7,17 @@ export default function Home() {
 
     const getLinks = () => {
         let paths = [
-            {route: "/experiment-one/experiment-one", title: "Making a Cube"},
-            {route: "/experiment-two/experiment-two", title: "Making a Sphere"},
-            {route: "/experiment-three/experiment-three", title: "Using a 3d Prop (Rocket Ship)"},
-            {route: "/experiment-four/experiment-four", title: "Exploring Box Physics"}
+            {route: "/experiment-one/experiment-one", title: "Making a Cube", name: "experiment-one"},
+            {route: "/experiment-two/experiment-two", title: "Making a Sphere", name: "experiment-two"},
+            {route: "/experiment-three/experiment-three", title: "Using a 3d Prop (Rocket Ship)", name: "experiment-three"},
+            {route: "/experiment-four/experiment-four", title: "Exploring Box Physics", name: "experiment-four"}
         ];
         let links = [];
         for (const path of paths) {
             links.push(
             <li key={path.route} style={{listStyleType: 'none', marginLeft: '-1rem', marginBottom: '1rem'}}>
                 <Link href={path.route}>
-                <a target="_blank"><code title={path.title} className={styles.code}>experiment-one</code></a>
+                <a target="_blank"><code title={path.title} className={styles.code}>{path.name}</code></a>
                 </Link>
             </li>
             )
