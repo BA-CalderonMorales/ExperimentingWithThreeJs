@@ -1,7 +1,7 @@
 import React, { Suspense } from "react";
 import { Canvas } from "@react-three/fiber";
 import styles from "../../styles/ExperimentOne.module.css";
-import Box from "./components/Box.jsx";
+import Box from "../common/components/Box.jsx";
 
 // Common files
 import Floor from "../common/components/Floor.jsx";
