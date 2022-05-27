@@ -17,19 +17,14 @@ const ExperimentThree = () => {
                 shadows={true}
                 className={styles.canvas}
                 camera={{
-                    position: [1, 0, 3]
+                    aspect: 1000,
+                    position: [10, -100, 0]
                 }}
             >
-                <Suspense fallback={null}>
-                    <Stage>
-                        <LightBulb
-                            position={[0, 3, 0]}
-                        />
-                                <Ship />
-                        <OrbitControls />
-                        <Floor position={[0, -3, 0]}/>
-                    </Stage>
-                </Suspense>
+                <Stage>
+                    <Ship />
+                    <OrbitControls target={[10, 0, 0]} />
+                </Stage>
             </Canvas>
         </div>
     );
